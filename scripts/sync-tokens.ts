@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import Color from 'color';
-import { tokens } from '../tokens.ts';
+import { tokens } from '../tokens.js';
 
 const OUTPUT_FILE = path.join(process.cwd(), 'tokens.css');
 

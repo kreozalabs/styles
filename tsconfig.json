@@ -11,8 +11,9 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "declarationMap": true,
-    "types": ["node"]
+    "types": ["node"],
+    "lib": ["ESNext"]
   },
-  "include": ["tokens.ts"],
-  "exclude": ["node_modules", "dist", "scripts"]
+  "include": ["tokens.ts", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
