@@ -17,8 +17,6 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # No 'path' needed as this is the repo root
-          package-name: "@kreozalabs/styles"
           release-type: node
 
       # Example: Publishing to NPM after release
