@@ -4,44 +4,73 @@
 
 @layer base {
   :root {
-    --brand-flow: 239 84% 67%;
-    --brand-space: 222 47% 11%;
-    --brand-pulse: 173 80% 40%;
-    --brand-spark: 351 95% 71%;
-    --brand-graphite: 215 25% 27%;
+    --background: 210 10% 92%; /* #e8eaed */
+    --foreground: 225 23% 6%;  /* #0c0e13 */
 
-    --background: var(--brand-space);
-    --foreground: 210 40% 98%;
+    --primary: 214 49% 57%;    /* #5e8cc5 */
+    --primary-foreground: 210 10% 92%;
 
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --secondary: 107 97% 41%;  /* #2fce03 */
+    --secondary-foreground: 225 23% 6%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --accent: 23 63% 53%;     /* #d3763c */
+    --accent-foreground: 210 10% 92%;
 
-    --primary: var(--brand-flow);
-    --primary-foreground: 222 47% 11%;
+    --card: 210 10% 92%;
+    --card-foreground: 225 23% 6%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --popover: 210 10% 92%;
+    --popover-foreground: 225 23% 6%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 5% 85%;
+    --muted-foreground: 225 10% 30%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 10% 92%;
+
+    --border: 210 10% 80%;
+    --input: 210 10% 80%;
+    --ring: 214 49% 57%;
+  }
+
+  .dark {
+    --background: 216 12% 8%; /* #121417 */
+    --foreground: 225 23% 94%; /* #eceef3 */
+
+    --primary: 214 47% 43%;    /* #3a68a1 */
+    --primary-foreground: 225 23% 94%;
+
+    --secondary: 107 97% 59%;  /* #5dfc31 */
+    --secondary-foreground: 216 12% 8%;
+
+    --accent: 23 63% 47%;      /* #c3662c */
+    --accent-foreground: 225 23% 94%;
+
+    --card: 216 12% 8%;
+    --card-foreground: 225 23% 94%;
+
+    --popover: 216 12% 8%;
+    --popover-foreground: 225 23% 94%;
+
+    --muted: 216 10% 15%;
+    --muted-foreground: 225 10% 70%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 225 23% 94%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: var(--brand-flow);
+    --border: 216 10% 20%;
+    --input: 216 10% 20%;
+    --ring: 214 47% 43%;
   }
 }
 
 body {
-  background-color: hsl(var(--brand-space));
+  background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: 'Inter', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
 }

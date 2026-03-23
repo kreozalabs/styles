@@ -1,0 +1,26 @@
+{
+  "name": "@kreozalabs/styles",
+  "version": "0.1.0",
+  "description": "Shared design system and styling for Kreoza platform",
+  "main": "base.css",
+  "module": "tokens.ts",
+  "types": "tokens.ts",
+  "files": [
+    "base.css",
+    "tailwind-preset.js",
+    "tokens.ts",
+    "fonts.txt",
+    "colors.txt",
+    "README.md"
+  ],
+  "author": "Kreoza Labs",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreozalabs/kreoza-labs.git",
+    "directory": "styles"
+  }
+}
