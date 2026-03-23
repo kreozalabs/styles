@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Allows manual triggering for testing
 
 permissions:
   contents: write
@@ -19,10 +20,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
 
-      # Example: Publishing to NPM after release
       - name: checkout
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v4
+
+      - name: setup pnpm
+        if: ${{ steps.release.outputs.release_created }}
+        uses: pnpm/action-setup@v4
 
       - name: setup node
         if: ${{ steps.release.outputs.release_created }}
@@ -30,10 +34,14 @@ jobs:
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org"
+          cache: "pnpm"
+
+      - name: install dependencies
+        if: ${{ steps.release.outputs.release_created }}
+        run: pnpm install --no-frozen-lockfile
 
       - name: publish to npm
         if: ${{ steps.release.outputs.release_created }}
-        run: |
-          npm publish
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
