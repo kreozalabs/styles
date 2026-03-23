@@ -1,76 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=PT%20Sans:700|PT%20Sans:400');
 
-@layer base {
-  :root {
-    --background: 210 10% 92%; /* #e8eaed */
-    --foreground: 225 23% 6%;  /* #0c0e13 */
+@import "tailwindcss";
 
-    --primary: 214 49% 57%;    /* #5e8cc5 */
-    --primary-foreground: 210 10% 92%;
-
-    --secondary: 107 97% 41%;  /* #2fce03 */
-    --secondary-foreground: 225 23% 6%;
-
-    --accent: 23 63% 53%;     /* #d3763c */
-    --accent-foreground: 210 10% 92%;
-
-    --card: 210 10% 92%;
-    --card-foreground: 225 23% 6%;
-
-    --popover: 210 10% 92%;
-    --popover-foreground: 225 23% 6%;
-
-    --muted: 210 5% 85%;
-    --muted-foreground: 225 10% 30%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 10% 92%;
-
-    --border: 210 10% 80%;
-    --input: 210 10% 80%;
-    --ring: 214 49% 57%;
-  }
-
-  .dark {
-    --background: 216 12% 8%; /* #121417 */
-    --foreground: 225 23% 94%; /* #eceef3 */
-
-    --primary: 214 47% 43%;    /* #3a68a1 */
-    --primary-foreground: 225 23% 94%;
-
-    --secondary: 107 97% 59%;  /* #5dfc31 */
-    --secondary-foreground: 216 12% 8%;
-
-    --accent: 23 63% 47%;      /* #c3662c */
-    --accent-foreground: 225 23% 94%;
-
-    --card: 216 12% 8%;
-    --card-foreground: 225 23% 94%;
-
-    --popover: 216 12% 8%;
-    --popover-foreground: 225 23% 94%;
-
-    --muted: 216 10% 15%;
-    --muted-foreground: 225 10% 70%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 225 23% 94%;
-
-    --border: 216 10% 20%;
-    --input: 216 10% 20%;
-    --ring: 214 47% 43%;
-  }
-}
+@import "./tokens.css";
 
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: 'PT Sans', sans-serif;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
 }
 
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+
 h1, h2, h3, h4, h5 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: var(--font-family-sans);
   font-weight: 700;
 }
+

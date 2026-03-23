@@ -2,19 +2,25 @@
   "name": "@kreozalabs/styles",
   "version": "0.1.0",
   "description": "Shared design system and styling for Kreoza platform",
-  "main": "base.css",
-  "module": "tokens.ts",
-  "types": "tokens.ts",
+  "main": "dist/tokens.js",
+  "module": "dist/tokens.js",
+  "types": "dist/tokens.d.ts",
   "files": [
+    "dist",
     "base.css",
+    "tokens.css",
     "tailwind-preset.js",
-    "tokens.ts",
-    "fonts.txt",
-    "colors.txt",
     "README.md"
   ],
+  "scripts": {
+    "clean": "rm -rf dist tokens.css",
+    "build:tokens": "tsx scripts/sync-tokens.ts",
+    "build:ts": "tsc",
+    "build": "pnpm clean && pnpm build:tokens && pnpm build:ts",
+    "prepare": "pnpm build"
+  },
   "author": "Kreoza Labs",
-  "license": "UNLICENSED",
+  "license": "BSD-3-Clause",
   "publishConfig": {
     "access": "public"
   },
@@ -22,5 +28,12 @@
     "type": "git",
     "url": "git+https://github.com/kreozalabs/kreoza-labs.git",
     "directory": "styles"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "color": "^5.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
   }
 }
