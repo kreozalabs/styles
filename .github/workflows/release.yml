@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 
 name: release-please
 
@@ -22,15 +23,15 @@ jobs:
 
       - name: checkout
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: setup pnpm
         if: ${{ steps.release.outputs.release_created }}
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5
 
       - name: setup node
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org"
@@ -42,6 +43,4 @@ jobs:
 
       - name: publish to npm
         if: ${{ steps.release.outputs.release_created }}
-        run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --no-git-checks --provenance
