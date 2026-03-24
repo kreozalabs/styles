@@ -1,0 +1,98 @@
+/* Generated file - do not edit manually */
+
+@layer base {
+  :root {
+    --text: 223 23% 6%; /* #0c0e13 */
+    --background: 216 12% 92%; /* #e8eaed */
+    --primary: 213 47% 57%; /* #5e8cc5 */
+    --primary-foreground: 216 12% 92%; /* #e8eaed */
+    --secondary: 107 97% 41%; /* #2fce03 */
+    --secondary-foreground: 223 23% 6%; /* #0c0e13 */
+    --accent: 23 63% 53%; /* #d3763c */
+    --accent-foreground: 216 12% 92%; /* #e8eaed */
+    --card: 216 12% 92%; /* #e8eaed */
+    --card-foreground: 223 23% 6%; /* #0c0e13 */
+    --popover: 216 12% 92%; /* #e8eaed */
+    --popover-foreground: 223 23% 6%; /* #0c0e13 */
+    --muted: 220 4% 85%; /* #d8d9db */
+    --muted-foreground: 218 12% 31%; /* #464d59 */
+    --destructive: 0 84% 60%; /* #ef4444 */
+    --destructive-foreground: 216 12% 92%; /* #e8eaed */
+    --border: 217 15% 83%; /* #ccd1d9 */
+    --input: 217 15% 83%; /* #ccd1d9 */
+    --ring: 213 47% 57%; /* #5e8cc5 */
+
+    /* Typography */
+    --font-family-sans: 'PT Sans', sans-serif;
+    --font-size-h1: 5.652rem;
+    --font-size-h2: 3.997rem;
+    --font-size-h3: 2.827rem;
+    --font-size-h4: 1.999rem;
+    --font-size-h5: 1.414rem;
+    --font-size-base: 1rem;
+    --font-size-small: 0.707rem;
+
+    /* Border Radius */
+    --radius-small: 0.25rem;
+    --radius-medium: 0.5rem;
+    --radius-large: 0.75rem;
+    --radius-kreoza: 0.75rem;
+  }
+
+  .dark {
+    --text: 223 23% 94%; /* #eceef3 */
+    --background: 216 12% 8%; /* #121417 */
+    --primary: 213 47% 43%; /* #3a68a1 */
+    --primary-foreground: 223 23% 94%; /* #eceef3 */
+    --secondary: 107 97% 59%; /* #5dfc31 */
+    --secondary-foreground: 216 12% 8%; /* #121417 */
+    --accent: 23 63% 47%; /* #c3662c */
+    --accent-foreground: 223 23% 94%; /* #eceef3 */
+    --card: 216 12% 8%; /* #121417 */
+    --card-foreground: 223 23% 94%; /* #eceef3 */
+    --popover: 216 12% 8%; /* #121417 */
+    --popover-foreground: 223 23% 94%; /* #eceef3 */
+    --muted: 216 13% 15%; /* #21252b */
+    --muted-foreground: 218 14% 73%; /* #b0b7c3 */
+    --destructive: 0 63% 31%; /* #7f1d1d */
+    --destructive-foreground: 223 23% 94%; /* #eceef3 */
+    --border: 217 17% 21%; /* #2d343f */
+    --input: 217 17% 21%; /* #2d343f */
+    --ring: 213 47% 43%; /* #3a68a1 */
+  }
+
+  /* Tailwind CSS v4 Theme */
+  @theme {
+    --color-text: hsl(var(--text));
+    --color-background: hsl(var(--background));
+    --color-primary: hsl(var(--primary));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+    --color-secondary: hsl(var(--secondary));
+    --color-secondary-foreground: hsl(var(--secondary-foreground));
+    --color-accent: hsl(var(--accent));
+    --color-accent-foreground: hsl(var(--accent-foreground));
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
+    --color-popover: hsl(var(--popover));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+    --color-muted: hsl(var(--muted));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+    --color-destructive: hsl(var(--destructive));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+    --font-sans: var(--font-family-sans);
+    --text-h1: var(--font-size-h1);
+    --text-h2: var(--font-size-h2);
+    --text-h3: var(--font-size-h3);
+    --text-h4: var(--font-size-h4);
+    --text-h5: var(--font-size-h5);
+    --text-base: var(--font-size-base);
+    --text-small: var(--font-size-small);
+    --radius-small: var(--radius-small);
+    --radius-medium: var(--radius-medium);
+    --radius-large: var(--radius-large);
+    --radius-kreoza: var(--radius-kreoza);
+  }
+}

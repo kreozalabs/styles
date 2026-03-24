@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering for testing
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+
+      - name: checkout
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+
+      - name: setup pnpm
+        if: ${{ steps.release.outputs.release_created }}
+        uses: pnpm/action-setup@v4
+
+      - name: setup node
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: "https://registry.npmjs.org"
+          cache: "pnpm"
+
+      - name: install dependencies
+        if: ${{ steps.release.outputs.release_created }}
+        run: pnpm install --no-frozen-lockfile
+
+      - name: publish to npm
+        if: ${{ steps.release.outputs.release_created }}
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

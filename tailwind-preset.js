@@ -2,16 +2,35 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          flow: "hsl(239, 84%, 67%)", // #6366f1
-          space: "hsl(222, 47%, 11%)", // #0f172a / Background
-          pulse: "hsl(173, 80%, 40%)", // #2dd4bf / Success/Indicators
-          spark: "hsl(351, 95%, 71%)", // #fb7185 / Creativity/Alerts
-          graphite: "hsl(215, 25%, 27%)", // #1e293b / Text-neutral
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["PT Sans", "system-ui", "sans-serif"],
+        serif: ["Georgia", "serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       borderRadius: {
