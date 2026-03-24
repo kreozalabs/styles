@@ -1,6 +1,6 @@
 {
   "name": "@kreozalabs/styles",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Shared design system and styling for Kreoza platform",
   "main": "dist/tokens.js",
   "module": "dist/tokens.js",
