@@ -26,8 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kreozalabs/kreoza-labs.git",
-    "directory": "styles"
+    "url": "git+https://github.com/kreozalabs/styles.git"
   },
   "packageManager": "pnpm@10.32.1",
   "devDependencies": {
