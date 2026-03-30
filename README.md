@@ -10,7 +10,7 @@ Tailwind v4 is CSS-first. Simply import the styles in your main CSS file:
 @import "tailwindcss";
 @import "@kreozalabs/styles";
 ```
-This automatically registers all theme variables (e.g., `bg-primary`, `rounded-kreoza`, `text-h1`).
+This automatically registers all theme variables (e.g., `bg-primary`, `text-h1`).
 
 ### 2. TypeScript / JavaScript
 Programmatic access to all raw hex values and design constants:

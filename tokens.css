@@ -36,7 +36,6 @@
     --radius-small: 0.25rem;
     --radius-medium: 0.5rem;
     --radius-large: 0.75rem;
-    --radius-kreoza: 0.75rem;
   }
 
   .dark {
@@ -93,6 +92,5 @@
     --radius-small: var(--radius-small);
     --radius-medium: var(--radius-medium);
     --radius-large: var(--radius-large);
-    --radius-kreoza: var(--radius-kreoza);
   }
 }

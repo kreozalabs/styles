@@ -33,9 +33,6 @@ module.exports = {
         serif: ["Georgia", "serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
-      borderRadius: {
-        'kreoza': '0.75rem',
-      },
     },
   },
   plugins: [],
