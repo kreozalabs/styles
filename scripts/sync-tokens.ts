@@ -49,6 +49,7 @@ function generateCSS() {
   });
 
   // Map Typography
+  css += '    --font-heading: var(--font-family-sans);\n';
   css += '    --font-sans: var(--font-family-sans);\n';
   Object.keys(tokens.typography.modularScale).forEach((name) => {
     css += `    --text-${name}: var(--font-size-${name});\n`;

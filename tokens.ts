@@ -1,58 +1,60 @@
 export const tokens = {
   colors: {
     light: {
-      text: "#0c0e13",
-      background: "#e8eaed",
-      primary: "#5e8cc5",
-      "primary-foreground": "#e8eaed",
-      secondary: "#2fce03",
-      "secondary-foreground": "#0c0e13",
-      accent: "#d3763c",
-      "accent-foreground": "#e8eaed",
-      card: "#e8eaed",
-      "card-foreground": "#0c0e13",
-      popover: "#e8eaed",
-      "popover-foreground": "#0c0e13",
-      muted: "#d8d9db", // #d8d9db is approx 210 5% 85%
-      "muted-foreground": "#464d59", // #464d59 is approx 225 10% 30%
-      destructive: "#ef4444", // #ef4444 is 0 84% 60%
-      "destructive-foreground": "#e8eaed",
-      border: "#ccd1d9", // #ccd1d9 is 210 10% 80%
-      input: "#ccd1d9",
-      ring: "#5e8cc5",
+      foreground: "#020617", // 222.2 84% 4.9%
+      background: "#f8fafc", // 210 40% 98%
+      primary: "#1e60f2",    // 221.2 83.2% 53.3%
+      "primary-foreground": "#f8fafc",
+      "primary-soft": "#eff4ff", // 221.2 83.2% 95%
+      secondary: "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      accent: "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      card: "#ffffff",
+      "card-foreground": "#020617",
+      popover: "#ffffff",
+      "popover-foreground": "#020617",
+      muted: "#f1f5f9",
+      "muted-foreground": "#64748b",
+      destructive: "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      border: "#e2e8f0",
+      input: "#e2e8f0",
+      ring: "#1e60f2",
     },
     dark: {
-      text: "#eceef3",
-      background: "#121417",
-      primary: "#3a68a1",
-      "primary-foreground": "#eceef3",
-      secondary: "#5dfc31",
-      "secondary-foreground": "#121417",
-      accent: "#c3662c",
-      "accent-foreground": "#eceef3",
-      card: "#121417",
-      "card-foreground": "#eceef3",
-      popover: "#121417",
-      "popover-foreground": "#eceef3",
-      muted: "#21252b", // approx 216 10% 15%
-      "muted-foreground": "#b0b7c3", // approx 225 10% 70%
-      destructive: "#7f1d1d", // approx 0 62.8% 30.6%
-      "destructive-foreground": "#eceef3",
-      border: "#2d343f", // approx 216 10% 20%
-      input: "#2d343f",
-      ring: "#3a68a1",
+      foreground: "#f8fafc",
+      background: "#020617",
+      primary: "#3b82f6",
+      "primary-foreground": "#0f172a",
+      "primary-soft": "#1e293b",
+      secondary: "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      accent: "#1e293b",
+      "accent-foreground": "#f8fafc",
+      card: "#020617",
+      "card-foreground": "#f8fafc",
+      popover: "#020617",
+      "popover-foreground": "#f8fafc",
+      muted: "#1e293b",
+      "muted-foreground": "#94a3b8",
+      destructive: "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      border: "#1e293b",
+      input: "#1e293b",
+      ring: "#1d4ed8",
     },
   },
   typography: {
-    fontFamily: "'PT Sans', sans-serif",
+    fontFamily: '"PT Sans", sans-serif',
     modularScale: {
-      h1: "5.652rem",
-      h2: "3.997rem",
-      h3: "2.827rem",
-      h4: "1.999rem",
-      h5: "1.414rem",
+      h1: "3.5rem",
+      h2: "2.5rem",
+      h3: "1.75rem",
+      h4: "1.5rem",
+      h5: "1.25rem",
       base: "1rem",
-      small: "0.707rem",
+      small: "0.875rem",
     },
     fontWeights: {
       regular: 400,
@@ -60,9 +62,11 @@ export const tokens = {
     },
   },
   borderRadius: {
-    small: "0.25rem",
+    small: "0.375rem",
     medium: "0.5rem",
     large: "0.75rem",
+    xl: "1rem",
+    xxl: "1.5rem",
   },
 } as const;
 
