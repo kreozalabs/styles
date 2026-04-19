@@ -3,7 +3,7 @@ export const tokens = {
     light: {
       foreground: "#020617", // 222.2 84% 4.9%
       background: "#f8fafc", // 210 40% 98%
-      primary: "#1e60f2",    // 221.2 83.2% 53.3%
+      primary: "#1e60f2", // 221.2 83.2% 53.3%
       "primary-foreground": "#f8fafc",
       "primary-soft": "#eff4ff", // 221.2 83.2% 95%
       secondary: "#f1f5f9",
@@ -23,26 +23,26 @@ export const tokens = {
       ring: "#1e60f2",
     },
     dark: {
-      foreground: "#f8fafc",
-      background: "#020617",
+      foreground: "#fafafa",
+      background: "#1F1F1F",
       primary: "#3b82f6",
-      "primary-foreground": "#0f172a",
-      "primary-soft": "#1e293b",
-      secondary: "#1e293b",
-      "secondary-foreground": "#f8fafc",
-      accent: "#1e293b",
-      "accent-foreground": "#f8fafc",
-      card: "#020617",
-      "card-foreground": "#f8fafc",
-      popover: "#020617",
-      "popover-foreground": "#f8fafc",
-      muted: "#1e293b",
-      "muted-foreground": "#94a3b8",
-      destructive: "#7f1d1d",
-      "destructive-foreground": "#f8fafc",
-      border: "#1e293b",
-      input: "#1e293b",
-      ring: "#1d4ed8",
+      "primary-foreground": "#ffffff",
+      "primary-soft": "#262626",
+      secondary: "#262626",
+      "secondary-foreground": "#fafafa",
+      accent: "#262626",
+      "accent-foreground": "#fafafa",
+      card: "#262626",
+      "card-foreground": "#fafafa",
+      popover: "#262626",
+      "popover-foreground": "#fafafa",
+      muted: "#262626",
+      "muted-foreground": "#a1a1aa",
+      destructive: "#ef4444",
+      "destructive-foreground": "#ffffff",
+      border: "#333333",
+      input: "#333333",
+      ring: "#3b82f6",
     },
   },
   typography: {
@@ -67,6 +67,36 @@ export const tokens = {
     large: "0.75rem",
     xl: "1rem",
     xxl: "1.5rem",
+  },
+  accents: {
+    blue: {
+      primary: "#1e60f2",
+      foreground: "#ffffff",
+    },
+    indigo: {
+      primary: "#6366f1",
+      foreground: "#ffffff",
+    },
+    violet: {
+      primary: "#8b5cf6",
+      foreground: "#ffffff",
+    },
+    emerald: {
+      primary: "#10b981",
+      foreground: "#ffffff",
+    },
+    rose: {
+      primary: "#f43f5e",
+      foreground: "#ffffff",
+    },
+    amber: {
+      primary: "#f59e0b",
+      foreground: "#ffffff",
+    },
+    forest: {
+      primary: "#2da44e",
+      foreground: "#ffffff",
+    },
   },
 } as const;
 

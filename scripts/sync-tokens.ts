@@ -60,7 +60,39 @@ function generateCSS() {
     css += `    --radius-${name}: var(--radius-${name});\n`;
   });
 
-  css += '  }\n}\n';
+  css += '  }\n\n';
+
+  // Accent Themes
+  // For each accent, we generate a class that overrides the primary variables
+  Object.entries(tokens.accents).forEach(([name, accentData]) => {
+    // Cast to any to handle the deep nesting easily in the script
+    const accent = accentData as any;
+    
+    css += `  .theme-${name} {\n`;
+    css += `    --primary: ${hexToHslValues(accent.primary)};\n`;
+    css += `    --primary-foreground: ${hexToHslValues(accent.foreground)};\n`;
+    css += `    --ring: ${hexToHslValues(accent.primary)};\n`;
+
+    // Add Base (Light) overrides if any
+    if (accent.overrides && accent.overrides.light) {
+      Object.entries(accent.overrides.light).forEach(([key, value]) => {
+        css += `    --${key}: ${hexToHslValues(value as string)};\n`;
+      });
+    }
+
+    css += `  }\n\n`;
+
+    // Add Dark overrides if any
+    if (accent.overrides && accent.overrides.dark) {
+      css += `  .dark .theme-${name} {\n`;
+      Object.entries(accent.overrides.dark).forEach(([key, value]) => {
+        css += `    --${key}: ${hexToHslValues(value as string)};\n`;
+      });
+      css += `  }\n\n`;
+    }
+  });
+
+  css += '}\n';
 
   fs.writeFileSync(OUTPUT_FILE, css);
   console.log(`Successfully generated ${OUTPUT_FILE}`);

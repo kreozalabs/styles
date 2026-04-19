@@ -42,26 +42,26 @@
   }
 
   .dark {
-    --foreground: 210 40% 98%; /* #f8fafc */
-    --background: 229 84% 5%; /* #020617 */
+    --foreground: 0 0% 98%; /* #fafafa */
+    --background: 0 0% 12%; /* #1F1F1F */
     --primary: 217 91% 60%; /* #3b82f6 */
-    --primary-foreground: 222 47% 11%; /* #0f172a */
-    --primary-soft: 217 33% 17%; /* #1e293b */
-    --secondary: 217 33% 17%; /* #1e293b */
-    --secondary-foreground: 210 40% 98%; /* #f8fafc */
-    --accent: 217 33% 17%; /* #1e293b */
-    --accent-foreground: 210 40% 98%; /* #f8fafc */
-    --card: 229 84% 5%; /* #020617 */
-    --card-foreground: 210 40% 98%; /* #f8fafc */
-    --popover: 229 84% 5%; /* #020617 */
-    --popover-foreground: 210 40% 98%; /* #f8fafc */
-    --muted: 217 33% 17%; /* #1e293b */
-    --muted-foreground: 215 20% 65%; /* #94a3b8 */
-    --destructive: 0 63% 31%; /* #7f1d1d */
-    --destructive-foreground: 210 40% 98%; /* #f8fafc */
-    --border: 217 33% 17%; /* #1e293b */
-    --input: 217 33% 17%; /* #1e293b */
-    --ring: 224 76% 48%; /* #1d4ed8 */
+    --primary-foreground: 0 0% 100%; /* #ffffff */
+    --primary-soft: 0 0% 15%; /* #262626 */
+    --secondary: 0 0% 15%; /* #262626 */
+    --secondary-foreground: 0 0% 98%; /* #fafafa */
+    --accent: 0 0% 15%; /* #262626 */
+    --accent-foreground: 0 0% 98%; /* #fafafa */
+    --card: 0 0% 15%; /* #262626 */
+    --card-foreground: 0 0% 98%; /* #fafafa */
+    --popover: 0 0% 15%; /* #262626 */
+    --popover-foreground: 0 0% 98%; /* #fafafa */
+    --muted: 0 0% 15%; /* #262626 */
+    --muted-foreground: 240 5% 65%; /* #a1a1aa */
+    --destructive: 0 84% 60%; /* #ef4444 */
+    --destructive-foreground: 0 0% 100%; /* #ffffff */
+    --border: 0 0% 20%; /* #333333 */
+    --input: 0 0% 20%; /* #333333 */
+    --ring: 217 91% 60%; /* #3b82f6 */
   }
 
   /* Tailwind CSS v4 Theme */
@@ -101,4 +101,47 @@
     --radius-xl: var(--radius-xl);
     --radius-xxl: var(--radius-xxl);
   }
+
+  .theme-blue {
+    --primary: 221 89% 53%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 221 89% 53%;
+  }
+
+  .theme-indigo {
+    --primary: 239 84% 67%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 239 84% 67%;
+  }
+
+  .theme-violet {
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 258 90% 66%;
+  }
+
+  .theme-emerald {
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 160 84% 39%;
+  }
+
+  .theme-rose {
+    --primary: 350 89% 60%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 350 89% 60%;
+  }
+
+  .theme-amber {
+    --primary: 38 92% 50%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 38 92% 50%;
+  }
+
+  .theme-forest {
+    --primary: 137 57% 41%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 137 57% 41%;
+  }
+
 }
